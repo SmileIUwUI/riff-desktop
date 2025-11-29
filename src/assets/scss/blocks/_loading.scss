@@ -1,0 +1,40 @@
+.loading {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+
+    background: $bg;
+
+    &__point {
+        width: 5vw;
+        height: 5vw;
+        background-color: $primary-color;
+        border-radius: 50%;
+        animation: pointWave 3s infinite ease-in-out;
+
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * 0.15}s;
+            }
+        }
+    }
+}
+
+@keyframes pointWave {
+
+    0%,
+    60%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    30% {
+        transform: scale(1.8);
+        opacity: 1;
+    }
+}
