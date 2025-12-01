@@ -39,7 +39,7 @@ const InputString = ({
     border_width = "2.6px",
     border_radius = "8px",
     type = 'text',
-    transition_duration = ".8s",
+    transition_duration = ".5s",
 
     border_color_focus = "#FF6B4A",
     text_color_focus = "#FF6B4A",

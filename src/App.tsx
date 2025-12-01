@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { useState } from "react";
-import { invoke } from "@tauri-apps/api/core";
 import LoadingPage from "./pages/LoadingPage/LoadingPage"
 import LoginPage from "./pages/LoginPage/LoginPage"
 import "./assets/css/styles.css"
@@ -13,7 +11,7 @@ function App() {
                     <Route
                         path="/"
                         element={
-                            <Navigate to="/loading" replace />
+                            <Navigate to="/login" replace />
                         }
                     />
                     <Route
